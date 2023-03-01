@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+li {
+    list-style: none;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    background-color: #6b6b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-wrap {
+    width: 350px;
+    height: 650px;
+    background-color: #010101;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px #010101;
+}
+
+.container {
+    width: 330px;
+    margin: 0 auto;
+}
+
+.item-wrap {
+    max-width: 320px;
+    padding: 20px;
+}
+
+.chat-header {
+    width: 100%;
+}
+
+.chat-header form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-header form .form-sec {
+    width: 200px;
+    height: 45px;
+    padding: 0 0 0 20px;
+    border-radius: 20px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+}
+
+.chat-header form .form-sec input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.chat-header form .form-sec .icon {
+    margin-right: 10px;
+}
+
+.chat-header form .avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    object-fit: cover;
+}
+
+.chat-inner {
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    overflow-y: scroll;
+}
+
+.chat-inner .title {
+    color: #327eec;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.chat-inner ul {
+    margin: 0;
+    padding: 0;
+}
+
+.inner {
+    margin-top: 20px;
+}
+
+.chat-inner ul li .user-info {
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #327eec;
+}
+
+.chat-inner ul li:hover {
+    border-radius: 15px;
+    transition: 0.5s;
+    background: #327eec;
+}
+
+.chat-inner ul li .user-avatar {
+    position: relative;
+    margin-right: 10px;
+}
+
+.chat-inner ul li .user-avatar .user-status {
+    position: absolute;
+    bottom: 0;
+    right: 1px;
+}
+
+.online-status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #327eec;
+    border: 2px solid #1a1a1a;
+}
+
+.chat-inner ul li .user-info .user-avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat-inner .mess .user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.chat-inner .mess .u-mess {
+    font-size: 14px;
+    color: #fff;
+}
+
+.chat-inner .action {
+    position: relative;
+    width: 50px;
+}
+
+.chat-inner .action .count-mess {
+    position: absolute;
+    transform: translate(8px, 0);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #327eec;
+    font-style: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.action .data {
+    font-style: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+}
+
+.menu ul {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li {
+    cursor: pointer;
+}
